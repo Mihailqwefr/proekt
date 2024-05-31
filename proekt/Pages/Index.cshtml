@@ -1,0 +1,59 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<header>
+    <h1>Добро пожаловать в наш магазин!</h1>
+</header>
+<div class="container">
+    <p>Здесь вы можете найти широкий ассортимент товаров по выгодным ценам.</p>
+    <p>Начните покупки прямо сейчас!</p>
+    <a asp-controller="ShoppingCart" asp-action="Cart">Корзина</a>
+</div>
+
+<div class="container">
+    <div class="grid-container">
+ 
+        <div class="product">
+            <h2>Название книги 1</h2>
+            <p>Автор: Автор 1</p>
+            <p class="price">Цена: 500 руб.</p>
+            <button class="buy-button" onclick="addToCart('Название книги 1')">Купить</button>
+        </div>
+        <div class="product">
+            <h2>Название книги 2</h2>
+            <p>Автор: Автор 2</p>
+            <p class="price">Цена: 600 руб.</p>
+            <button class="buy-button" onclick="addToCart('Название книги 2')">Купить</button>
+        </div>
+    
+        <div class="product">
+            <h2>Название книги 3</h2>
+            <p>Автор: Автор 3</p>
+            <p class="price">Цена: 700 руб.</p>
+            <button class="buy-button" onclick="addToCart('Название книги 3')">Купить</button>
+        </div>
+        <div class="product">
+            <h2>Название книги 4</h2>
+            <p>Автор: Автор 4</p>
+            <p class="price">Цена: 800 руб.</p>
+            <button class="buy-button" onclick="addToCart('Название книги 4')">Купить</button>
+        </div>
+   
+        <div class="product">
+            <h2>Название книги 4</h2>
+            <p>Автор: Автор 4</p>
+            <p class="price">Цена: 800 руб.</p>
+            <button class="buy-button" onclick="addToCart('Название книги 4')">Купить</button>
+        </div>
+        <div class="product">
+            <h2>Название книги 4</h2>
+            <p>Автор: Автор 4</p>
+            <p class="price">Цена: 800 руб.</p>
+            <button class="buy-button" onclick="addToCart('Название книги 4')">Купить</button>
+        </div>
+    </div>
+</div>
+</div>
